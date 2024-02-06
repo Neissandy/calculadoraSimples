@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>Digite os valores para calcular</h2>
+
+    <h3>Primeiro Número: </h3>
+    <input id="n1" type="number" placeholder="Digite o valor..."> <br>
+    <h3>Segundo Número: </h3>
+    <input id="n2" type="number" placeholder="Digite o valor..."> <br>
+
+    <br>
+    <button onclick="calcularSoma()">Somar</button>
+    <button type="submit">Subtrair</button>
+    <button type="submit">Multiplicar</button>
+    <button type="submit" >Dividir</button>
+
+    <br>
+    o Resultado é <span></span>
+
+    <script>
+        var n1 = document.querySelector("#n1")
+        var n2 = document.querySelector("#n2")
+        var Resultado = document.querySelector("span")
+    
+        function calcularSoma(){
+            Resultado.innerHTML = parseFloat(n1.value) + parseFloat(n2.value)
+            //var soma = nume1 + nume2
+            //var somaFormatada = parseFloat(soma);
+            //console.log(somaFormatada);
+            //return somaFormatada;
+        }
+    </script>
+
+
+
+</body>
+</html>
